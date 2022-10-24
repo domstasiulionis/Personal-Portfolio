@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+$green: rgb(0, 179, 0);
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,58 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-color: rgb(2, 2, 2);
+}
+
+// Scroll Bar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 20px;
+}
+
+// Support for browsers that do not support webkit
+@supports (scrollbar-color: #303030 #000000) {
+  * {
+    scrollbar-color: #303030 #000000;
+    scrollbar-width: thin;
+  }
+}
+
+// Intersection observer classes
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-20%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+// Navigation bar
 .nav {
   position: fixed;
   width: 100%;
@@ -61,9 +115,9 @@
         height: 35px;
         width: 80px;
         border-radius: 20px;
-        background-color: rgb(0, 179, 0);
+        background-color: $green;
         transition: all 0.2s ease-in-out;
-        border: 2px solid rgb(0, 179, 0);
+        border: 2px solid $green;
         cursor: pointer;
         color: white;
         margin: 12px 50px 0 50px;
@@ -74,5 +128,221 @@
         }
       }
     }
+  }
+}
+
+// Landing page
+.lp {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  &-bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.02;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+  }
+
+  &-imgs {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    width: 700px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+
+    &__guy {
+      position: absolute;
+      width: 600px;
+      top: 100px;
+      right: 140px;
+      animation: fadeIn 0.7s ease-in-out forwards;
+    }
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 170px;
+    left: 145px;
+
+    &__text {
+      color: rgb(221, 221, 221);
+      padding-left: 9px;
+      letter-spacing: 8px;
+      font-weight: bold;
+      font-size: 26px;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    &-name {
+      display: flex;
+      color: white;
+      font-weight: bolder;
+      font-size: 120px;
+      cursor: default;
+
+      &__letter:nth-child(1) {
+        transition-delay: 100ms;
+      }
+      &__letter:nth-child(2) {
+        transition-delay: 200ms;
+      }
+      &__letter:nth-child(3) {
+        transition-delay: 300ms;
+      }
+      &__letter:nth-child(4) {
+        transition-delay: 400ms;
+      }
+      &__letter:nth-child(5) {
+        transition-delay: 500ms;
+      }
+      &__letter:nth-child(6) {
+        transition-delay: 600ms;
+      }
+      &__letter:nth-child(7) {
+        transition-delay: 700ms;
+      }
+      &__letter:nth-child(8) {
+        transition-delay: 800ms;
+      }
+      &__letter:nth-child(9) {
+        transition-delay: 900ms;
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 98%;
+      height: 50px;
+      margin: 15px 0 5px 10px;
+      background-color: $green;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      animation: slide 1s ease-in-out forwards;
+
+      &__position {
+        position: absolute;
+        color: white;
+        letter-spacing: 8px;
+        font-weight: bold;
+        font-size: 18px;
+        font-weight: 400;
+        animation: slide-positon 1.2s ease-in-out forwards;
+        cursor: default;
+      }
+    }
+
+    &__bio {
+      color: white;
+      margin-top: 25px;
+      margin-left: 10px;
+      width: 660px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-left: 10px;
+      gap: 60px;
+      width: 660px;
+
+      &__icon {
+        color: rgb(197, 197, 197);
+        font-size: 40px;
+        animation: fadeIn 1s ease-in-out forwards;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+          color: white;
+        }
+      }
+    }
+
+    &-action {
+      margin: 150px auto 0 auto;
+
+      &__text {
+        color: white;
+        animation: 0.9s linear infinite alternate scrollDown;
+        cursor: default;
+      }
+
+      &__circle {
+        width: 30px;
+        height: 30px;
+        margin: 15px auto 0 auto;
+        background-color: $green;
+        border-radius: 25px;
+        animation: fadeIn 1s ease-in-out forwards;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &__icon {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        padding-top: 6px;
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    height: 0px;
+    opacity: 0%;
+  }
+
+  100% {
+    height: 50px;
+  }
+}
+
+@keyframes slide-positon {
+  0% {
+    bottom: -20px;
+  }
+
+  50% {
+    bottom: -20px;
+  }
+
+  100% {
+    bottom: 13px;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
   }
 }
