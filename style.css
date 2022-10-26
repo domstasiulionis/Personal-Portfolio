@@ -288,6 +288,82 @@ body {
   padding-left: 8px;
 }
 
+.abt {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.abt-imgs {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  width: 700px;
+  -webkit-animation: fadeIn 0.7s ease-in-out forwards;
+          animation: fadeIn 0.7s ease-in-out forwards;
+}
+.abt-imgs__guy {
+  position: absolute;
+  width: 720px;
+  top: 150px;
+  left: 130px;
+  -webkit-animation: fadeIn 0.7s ease-in-out forwards;
+          animation: fadeIn 0.7s ease-in-out forwards;
+}
+.abt-me {
+  position: absolute;
+  width: 53%;
+  top: 200px;
+  right: 20px;
+  padding: 15px;
+}
+.abt-me__title {
+  color: white;
+  font-size: 60px;
+  margin-right: 150px;
+  margin-bottom: 20px;
+}
+.abt-me__text {
+  color: white;
+  font-size: 18px;
+  margin-right: 150px;
+}
+.abt-me-logos-container {
+  width: 100%;
+  display: flex;
+}
+.abt-me-logos-container--one {
+  display: flex;
+}
+.abt-me-logos-container--two {
+  display: flex;
+}
+.abt-me-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+.abt-me-skill__logo {
+  width: auto;
+  height: 40px;
+  padding-bottom: 10px;
+  transition-delay: 500ms;
+}
+.abt-me-skill__title {
+  color: white;
+  font-size: 18px;
+  transition-delay: 650ms;
+}
+.abt-me #firebase {
+  margin-right: 35px;
+}
+.abt-me #photoshop {
+  margin-top: 27px;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0%;

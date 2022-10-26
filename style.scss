@@ -309,6 +309,93 @@ body {
   }
 }
 
+.abt {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  &-imgs {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 700px;
+    animation: fadeIn 0.7s ease-in-out forwards;
+
+    &__guy {
+      position: absolute;
+      width: 720px;
+      top: 150px;
+      left: 130px;
+      animation: fadeIn 0.7s ease-in-out forwards;
+    }
+  }
+
+  &-me {
+    position: absolute;
+    width: 53%;
+    top: 200px;
+    right: 20px;
+    padding: 15px;
+
+    &__title {
+      color: white;
+      font-size: 60px;
+      margin-right: 150px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      color: white;
+      font-size: 18px;
+      margin-right: 150px;
+    }
+
+    &-logos-container {
+      width: 100%;
+      display: flex;
+
+      &--one {
+        display: flex;
+      }
+
+      &--two {
+        display: flex;
+      }
+    }
+
+    &-skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 25px;
+      margin-right: 50px;
+
+      &__logo {
+        width: auto;
+        height: 40px;
+        padding-bottom: 10px;
+        transition-delay: 500ms;
+      }
+
+      &__title {
+        color: white;
+        font-size: 18px;
+        transition-delay: 650ms;
+      }
+    }
+
+    #firebase {
+      margin-right: 35px;
+    }
+
+    #photoshop {
+      margin-top: 27px;
+    }
+  }
+}
+
 // Animations
 @keyframes fadeIn {
   0% {
