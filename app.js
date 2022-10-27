@@ -45,3 +45,19 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Hamburger
+const ham = document.querySelector(".nav-content-hamburger");
+const hamMenu = document.querySelector(".nav-content-hamburger-menu");
+
+ham.addEventListener("click", () => {
+  ham.classList.toggle("ham-active");
+  hamMenu.classList.toggle("menu-active");
+});
+
+document.querySelectorAll(".nav-content-hamburger-menu__item").forEach((r) =>
+  r.addEventListener("click", () => {
+    ham.classList.remove("ham-active");
+    hamMenu.classList.remove("menu-active");
+  })
+);
