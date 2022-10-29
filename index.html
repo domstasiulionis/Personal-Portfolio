@@ -345,7 +345,72 @@
       </div>
     </section>
 
-    <section id="contact" class="ct contact"></section>
+    <!-- Contact -->
+    <section id="contact" class="ct contact">
+      <div class="ct-container">
+        <h1 class="ct__title hidden">Get in touch</h1>
+        <div class="ct-form">
+          <div class="ct-form-details">
+            <div class="ct-form-desc hidden">
+              <p class="ct-form-desc__email">
+                <i class="fas fa-envelope"></i>
+                domstaswork@gmail.com
+              </p>
+              <p class="ct-form-desc__location">
+                <i class="fas fa-map-marker-alt ct-form-desc__marker"></i>
+                London, UK.
+              </p>
+            </div>
+          </div>
+          <div class="ct-form">
+            <h2 class="ct-form__title hidden">Contact Me</h2>
+            <form
+              class="ct-form-container hidden"
+              target="_blank"
+              action="https://formsubmit.co/59d485978eb6fac49be21ad00cabf8b2"
+              method="POST"
+              onclick="clearFrom()"
+            >
+              <div class="ct-form-container-top">
+                <input
+                  class="ct-form__field"
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  class="ct-form__field"
+                  type="email"
+                  name="Email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  class="ct-form__field"
+                  type="number"
+                  name="Phone"
+                  placeholder="Phome Number (Optional)"
+                />
+              </div>
+              <textarea
+                class="ct-form__field ct-form__field--message"
+                type="textarea"
+                name="Message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="ct-form__submit-btn submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright hidden">
+          <p class="copyright__text">&copy; Dominykas Stasiulionis 2022</p>
+        </div>
+      </div>
+    </section>
 
     <script src="./app.js"></script>
   </body>

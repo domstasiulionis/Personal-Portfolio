@@ -61,3 +61,14 @@ document.querySelectorAll(".nav-content-hamburger-menu__item").forEach((r) =>
     hamMenu.classList.remove("menu-active");
   })
 );
+
+const inputs = document.querySelectorAll("input");
+const textAreas = document.querySelectorAll("textarea");
+const submit = document.querySelector(".submit");
+
+submit.addEventListener("click", () => {
+  setTimeout(() => {
+    inputs.forEach((input) => (input.value = ""));
+    textAreas.forEach((area) => (area.value = ""));
+  }, 2000);
+});
