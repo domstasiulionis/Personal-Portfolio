@@ -502,10 +502,9 @@ body {
       }
 
       &__img {
-        width: auto;
+        width: 100%;
         border-radius: 10px;
-        opacity: 0.25;
-        filter: blur(4px);
+        opacity: 0.55;
         object-fit: cover;
       }
 
@@ -656,7 +655,7 @@ body {
         display: block;
         transition: all 0.3s ease-in-out;
         margin: -3px 50px 0 auto;
-        cursor: poiter;
+        cursor: pointer;
 
         &-menu {
           position: fixed;
@@ -1662,6 +1661,28 @@ body {
   }
 }
 
+@media (max-width: 1380px) {
+  .abt {
+    &-imgs {
+      left: 20px;
+      width: 550px;
+      top: 70px;
+
+      &__guy {
+        width: 540px;
+        top: 140px;
+        left: 70px;
+      }
+    }
+
+    &-me {
+      width: 54%;
+      right: 0px;
+      top: 90px;
+    }
+  }
+}
+
 @media (max-width: 1260px) {
   .abt {
     &-imgs {
@@ -1678,7 +1699,7 @@ body {
 
     &-me {
       width: 54%;
-      top: 130px;
+      top: 100px;
       right: 0px;
 
       &__title {
@@ -1759,6 +1780,25 @@ body {
         top: 290px;
         left: 300px;
       }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .abt {
+    &-imgs {
+      top: 230px;
+      left: 250px;
+      width: 350px;
+
+      &__guy {
+        width: 350px;
+        left: 300px;
+      }
+    }
+
+    &-me {
+      top: 100px;
     }
   }
 }
@@ -1930,35 +1970,39 @@ body {
   }
 }
 
-@media (max-height: 820px) {
-  .abt {
-    height: 130vh;
-  }
-}
+// @media (max-height: 800px) {
+//   .abt {
+//     height: 110vh;
 
-@media (max-height: 755px) {
-  .abt {
-    height: 140vh;
-  }
-}
+//     &-bg {
+//       height: 110vh;
+//     }
+//   }
+// }
 
-@media (max-height: 700px) {
-  .abt {
-    height: 145vh;
-  }
-}
+// @media (max-height: 755px) {
+//   .abt {
+//     height: 140vh;
+//   }
+// }
 
-@media (max-height: 675px) {
-  .abt {
-    height: 155vh;
-  }
-}
+// @media (max-height: 700px) {
+//   .abt {
+//     height: 145vh;
+//   }
+// }
 
-@media (max-height: 575px) {
-  .abt {
-    height: 185vh;
-  }
-}
+// @media (max-height: 675px) {
+//   .abt {
+//     height: 155vh;
+//   }
+// }
+
+// @media (max-height: 575px) {
+//   .abt {
+//     height: 185vh;
+//   }
+// }
 
 // Projects
 @media (max-width: 1700px) {
@@ -1981,14 +2025,6 @@ body {
           );
           border-bottom: 4px solid #00b300;
           border-radius: 10px;
-        }
-
-        &__img {
-          width: auto;
-          border-radius: 10px;
-          opacity: 0.25;
-          filter: blur(4px);
-          object-fit: cover;
         }
 
         &-inner {
@@ -2082,9 +2118,13 @@ body {
 
 @media (max-width: 980px) {
   .prj {
+    position: relative;
     height: auto;
 
     &-bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
       height: auto;
     }
 
@@ -2222,7 +2262,11 @@ body {
     &-cards {
       &__card {
         width: 330px;
-        height: 570px;
+        height: 525px;
+
+        &-img {
+          height: 160px;
+        }
 
         &-inner {
           &__title {
@@ -2250,7 +2294,7 @@ body {
     &-cards {
       &__card {
         width: 300px;
-        height: 595px;
+        height: 550px;
 
         &-inner {
           &__title {
@@ -2277,7 +2321,11 @@ body {
     &-cards {
       &__card {
         width: 270px;
-        height: 595px;
+        height: 535px;
+
+        &-img {
+          height: 140px;
+        }
 
         &-inner {
           &__title {
