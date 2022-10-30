@@ -1006,6 +1006,11 @@ body {
     width: 550px;
   }
 }
+@media (max-width: 1285px) {
+  .lp-header-action {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 1215px) {
   .lp-imgs {
     width: 400px;
@@ -2056,7 +2061,7 @@ body {
     width: 240px;
   }
 }
-@media (max-height: 805px) {
+@media (max-width: 1000px) and (max-height: 805px) {
   .abt {
     height: 140vh;
   }
