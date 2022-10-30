@@ -695,11 +695,6 @@ body {
     transform: translateY(10px);
   }
 }
-@media (max-height: 720px) {
-  .lp-header-action {
-    margin-top: 50px;
-  }
-}
 @media (max-width: 430px) {
   ::-webkit-scrollbar {
     display: none;
@@ -1294,6 +1289,11 @@ body {
     font-size: 23px;
   }
 }
+@media (max-width: 400px) {
+  .lp-header {
+    margin: 0;
+  }
+}
 @media (max-width: 360px) {
   .lp-header__text {
     font-size: 10px;
@@ -1322,6 +1322,11 @@ body {
   }
   .lp-header-action__icon {
     padding-left: 8.5px;
+  }
+}
+@media (max-width: 320px) {
+  .lp {
+    height: 130vh;
   }
 }
 @media (min-width: 2400px) {
@@ -1669,6 +1674,11 @@ body {
     width: 100%;
     top: 90px;
     padding: 0 20px 20px 20px;
+  }
+}
+@media (max-width: 320px) {
+  .abt {
+    height: 185vh;
   }
 }
 @media (max-width: 1700px) {
@@ -2044,5 +2054,31 @@ body {
 @media (max-width: 350px) {
   .ct-form {
     width: 240px;
+  }
+}
+@media (max-height: 805px) {
+  .abt {
+    height: 140vh;
+  }
+}
+@media (max-height: 690px) {
+  .abt {
+    height: 150vh;
+  }
+}
+@media (max-height: 650px) {
+  .lp {
+    height: 110vh;
+  }
+  .lp-header {
+    margin-top: -30px;
+  }
+  .abt {
+    height: 170vh;
+  }
+}
+@media (max-height: 560px) {
+  .abt {
+    height: 185vh;
   }
 }/*# sourceMappingURL=style.css.map */
