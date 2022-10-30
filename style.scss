@@ -326,6 +326,7 @@ body {
 
 .abt {
   position: relative;
+
   width: 100%;
   height: 100vh;
 
@@ -741,6 +742,16 @@ body {
 
 // Media queries
 // General
+@media (max-height: 720px) {
+  .lp {
+    &-header {
+      &-action {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
 @media (max-width: 430px) {
   ::-webkit-scrollbar {
     display: none;
@@ -1805,6 +1816,58 @@ body {
       width: 54%;
       right: 0px;
       top: 90px;
+    }
+  }
+}
+
+@media (max-width: 1285px) {
+  .abt {
+    &-imgs {
+      left: 20px;
+      width: 500px;
+      top: 60px;
+
+      &__guy {
+        width: 500px;
+        top: 120px;
+        left: 70px;
+      }
+    }
+
+    &-me {
+      width: 57%;
+      top: 100px;
+      right: 0px;
+
+      &__title {
+        font-size: 50px;
+        margin-right: 150px;
+      }
+
+      &__text {
+        font-size: 14px;
+        margin-right: 100px;
+      }
+
+      &-skill {
+        &__logo {
+          height: 32px;
+        }
+
+        &__title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .abt {
+    &-me {
+      width: 54%;
+      top: 100px;
+      right: 0px;
 
       &-logos-container {
         display: block;
@@ -1817,28 +1880,6 @@ body {
           display: flex;
         }
       }
-    }
-  }
-}
-
-@media (max-width: 1260px) {
-  .abt {
-    &-imgs {
-      left: 20px;
-      width: 500px;
-      top: 90px;
-
-      &__guy {
-        width: 500px;
-        top: 120px;
-        left: 70px;
-      }
-    }
-
-    &-me {
-      width: 54%;
-      top: 100px;
-      right: 0px;
 
       &__title {
         font-size: 50px;
@@ -2190,19 +2231,29 @@ body {
   .prj {
     &-header {
       width: 80%;
+
+      &__title {
+        margin-bottom: 10px;
+      }
     }
 
     &-cards {
       gap: 40px;
+      margin-top: 10px;
 
       &__card {
-        width: 450px;
+        width: 410px;
+        height: 495px;
 
         &-inner {
           &-tags {
             &__tag {
               font-size: 13px;
             }
+          }
+
+          &-btns {
+            margin-top: 0;
           }
         }
       }
@@ -2523,6 +2574,21 @@ body {
     &-form {
       &__title {
         margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1285px) {
+  .ct {
+    &-form {
+      &__field {
+        &--message {
+          width: 99.8%;
+          height: 240px;
+          margin-top: 15px;
+          resize: none;
+        }
       }
     }
   }
