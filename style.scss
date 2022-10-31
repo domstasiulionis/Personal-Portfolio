@@ -1556,6 +1556,17 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .lp {
+    &-header {
+      &-action {
+        transform: scale(0.8);
+        margin-top: 130px;
+      }
+    }
+  }
+}
+
 @media (max-width: 360px) {
   .lp {
     &-header {
@@ -2109,6 +2120,7 @@ body {
 @media (max-width: 320px) {
   .abt {
     height: 185vh;
+    margin-bottom: 240px;
   }
 }
 
@@ -2477,7 +2489,8 @@ body {
 
 @media (max-width: 395px) {
   .prj {
-    margin-top: 110px;
+    margin-top: 130px;
+    margin-bottom: 120px;
   }
 }
 
@@ -2558,7 +2571,7 @@ body {
 
 @media (max-width: 320px) {
   .prj {
-    margin-top: 250px;
+    margin-top: 450px;
   }
 }
 

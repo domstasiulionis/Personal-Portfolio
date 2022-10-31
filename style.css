@@ -1262,6 +1262,12 @@ body {
     margin: 0;
   }
 }
+@media (max-width: 375px) {
+  .lp-header-action {
+    transform: scale(0.8);
+    margin-top: 130px;
+  }
+}
 @media (max-width: 360px) {
   .lp-header__text {
     font-size: 10px;
@@ -1655,6 +1661,7 @@ body {
 @media (max-width: 320px) {
   .abt {
     height: 185vh;
+    margin-bottom: 240px;
   }
 }
 @media (max-width: 1700px) {
@@ -1904,7 +1911,8 @@ body {
 }
 @media (max-width: 395px) {
   .prj {
-    margin-top: 110px;
+    margin-top: 130px;
+    margin-bottom: 120px;
   }
 }
 @media (max-width: 390px) {
@@ -1961,7 +1969,7 @@ body {
 }
 @media (max-width: 320px) {
   .prj {
-    margin-top: 250px;
+    margin-top: 450px;
   }
 }
 @media (max-width: 1550px) {
