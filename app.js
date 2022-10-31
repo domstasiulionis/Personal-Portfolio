@@ -64,6 +64,7 @@ document.querySelectorAll(".nav-content-hamburger-menu__item").forEach((r) =>
   })
 );
 
+// Form
 const inputs = document.querySelectorAll("input");
 const textAreas = document.querySelectorAll("textarea");
 const submit = document.querySelector(".submit");

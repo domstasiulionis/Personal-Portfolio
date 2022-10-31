@@ -26,6 +26,10 @@ body {
   object-fit: cover;
   user-select: none;
   pointer-events: none;
+
+  .bg--next {
+    position: absolute;
+  }
 }
 
 // Scroll Bar
@@ -1311,44 +1315,23 @@ body {
     &-header {
       position: static;
       justify-content: center;
-      margin: 65px auto 0 auto;
+      margin: 25px auto 0 auto;
 
       &__text {
         font-size: 22px;
-        text-align: center;
-        animation: fadeIn 1s ease-in-out forwards;
       }
 
       &-name {
-        display: flex;
-        color: white;
-        font-weight: bolder;
         font-size: 120px;
-        cursor: default;
       }
 
       &-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
         width: 98%;
         height: 50px;
         margin: 15px 0 5px 10px;
-        background-color: $green;
-        overflow: hidden;
-        transition: all 0.3s ease-in-out;
-        animation: slide 1s ease-in-out forwards;
 
         &__position {
-          position: absolute;
-          color: white;
-          letter-spacing: 8px;
-          font-weight: bold;
           font-size: 18px;
-          font-weight: 400;
-          animation: slide-positon 1.2s ease-in-out forwards;
-          cursor: default;
         }
       }
 
@@ -1703,6 +1686,16 @@ body {
   }
 }
 
+@media (max-width: 1600px) {
+  .abt {
+    &-imgs {
+      top: 75px;
+      left: 20px;
+      width: 600px;
+    }
+  }
+}
+
 @media (max-width: 1550px) {
   .abt {
     &-me {
@@ -1919,30 +1912,12 @@ body {
 
 @media (max-width: 1025px) {
   .abt {
-    margin-top: -100px;
-    margin-bottom: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 
     &-me {
       margin-top: -30px;
     }
-
-    &-imgs {
-      top: 220px;
-      left: 250px;
-      width: 350px;
-
-      &__guy {
-        width: 350px;
-        top: 260px;
-        left: 300px;
-      }
-    }
-  }
-}
-
-@media (max-width: 980px) {
-  .abt {
-    margin-top: 50px;
 
     &-imgs {
       display: none;
@@ -1951,6 +1926,12 @@ body {
         display: none;
       }
     }
+  }
+}
+
+@media (max-width: 980px) {
+  .abt {
+    margin-top: 50px;
 
     &-me {
       top: 100px;
@@ -2225,7 +2206,7 @@ body {
 
       &__card {
         width: 410px;
-        height: 495px;
+        height: 475px;
 
         &-inner {
           &-tags {
@@ -2243,18 +2224,20 @@ body {
   }
 }
 
-@media (max-width: 1135px) {
+@media (max-width: 1280px) {
   .prj {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 1135px) {
   .prj {
+    margin-bottom: 100px;
+
     &-cards {
       &__card {
         width: 410px;
-        height: 495px;
+        height: 475px;
 
         &-inner {
           padding: 20px;
@@ -2325,7 +2308,6 @@ body {
 
       &__card {
         width: 510px;
-        height: 495px;
 
         &-inner {
           &__title {
@@ -2350,7 +2332,7 @@ body {
 
 @media (max-width: 820px) {
   .prj {
-    margin-top: -480px;
+    margin-top: -280px;
     margin-bottom: 180px;
   }
 }
@@ -2385,7 +2367,7 @@ body {
     &-cards {
       &__card {
         width: 440px;
-        height: 515px;
+        height: 495px;
 
         &-inner {
           &-tags {
@@ -2421,7 +2403,7 @@ body {
     &-cards {
       &__card {
         width: 380px;
-        height: 535px;
+        height: 512px;
 
         &-inner {
           &-tags {
@@ -2459,7 +2441,7 @@ body {
     &-cards {
       &__card {
         width: 330px;
-        height: 525px;
+        height: 505px;
 
         &-img {
           height: 160px;
@@ -2488,25 +2470,25 @@ body {
 
 @media (max-width: 415px) {
   .prj {
-    margin-top: -150px;
+    margin-top: 130px;
     margin-bottom: 170px;
   }
 }
 
 @media (max-width: 395px) {
   .prj {
-    margin-top: -150px;
+    margin-top: 110px;
   }
 }
 
 @media (max-width: 390px) {
   .prj {
-    margin-top: -150px;
+    margin-top: 130px;
 
     &-cards {
       &__card {
         width: 300px;
-        height: 550px;
+        height: 530px;
 
         &-inner {
           &__title {
@@ -2530,18 +2512,18 @@ body {
 
 @media (max-width: 375px) {
   .prj {
-    margin-top: -80px;
+    margin-top: 120px;
   }
 }
 
 @media (max-width: 360px) {
   .prj {
-    margin-top: -100px;
+    margin-top: 150px;
 
     &-cards {
       &__card {
         width: 270px;
-        height: 535px;
+        height: 515px;
 
         &-img {
           height: 140px;
@@ -2753,6 +2735,50 @@ body {
 }
 
 // General
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .lp {
+    &-header {
+      margin-top: 300px;
+      transform: scale(1.2);
+    }
+  }
+
+  .abt {
+    margin-top: -100px;
+  }
+
+  .prj {
+    margin-top: -600px;
+  }
+
+  .ct {
+    margin-top: -600px;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 1022px) and (max-height: 1364px) {
+  .lp {
+    &-header {
+      margin: 25px auto 0 auto;
+      transform: scale(1);
+    }
+  }
+
+  .abt {
+    margin-top: 0px;
+  }
+
+  .prj {
+    margin-top: 0px;
+  }
+
+  .ct {
+    margin-top: 0px;
+    height: 100vh;
+  }
+}
+
 @media (max-width: 1000px) and (max-height: 805px) {
   .abt {
     height: 130vh;
