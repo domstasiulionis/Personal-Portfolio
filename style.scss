@@ -438,6 +438,7 @@ body {
       font-size: 60px;
       color: white;
       padding-top: 90px;
+      margin-top: 20px;
       margin-bottom: 25px;
     }
 
@@ -2817,50 +2818,6 @@ body {
 
   .ct {
     transform: scale(1);
-  }
-}
-
-@media (max-width: 1024px) and (max-height: 1366px) {
-  .lp {
-    &-header {
-      margin-top: 300px;
-      transform: scale(1.2);
-    }
-  }
-
-  .abt {
-    margin-top: -100px;
-  }
-
-  .prj {
-    margin-top: -600px;
-  }
-
-  .ct {
-    margin-top: -600px;
-    height: 50vh;
-  }
-}
-
-@media (max-width: 1022px) and (max-height: 1364px) {
-  .lp {
-    &-header {
-      margin: 25px auto 0 auto;
-      transform: scale(1);
-    }
-  }
-
-  .abt {
-    margin-top: 0px;
-  }
-
-  .prj {
-    margin-top: 0px;
-  }
-
-  .ct {
-    margin-top: 0px;
-    height: 100vh;
   }
 }
 
