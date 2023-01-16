@@ -1,8 +1,8 @@
 # :selfie: Personal Portfolio v1
-This is an older version of my portfolio!
+This is an older version of my portfolio!   
 Old version: https://oldportdomthedev.netlify.app/
 
-New live site: https://domthedev.netlify.app/
+V2 site: https://domthedev.netlify.app/
 
 ## :receipt: About
 This is the first iteration of my personal portfolio website. The purpose of this website is to present an overview of my work, skills and capabilities and provide contact information all in one place.
